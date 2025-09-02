@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>JS App</title>
-    <script src="app.js" >
+    <head>
+        <meta charset="UTF-8">
+        <title>JS App</title>
+        <script src="app.js" >
 
-    </script>
-</head>
-<body>
+        </script>
+        <style>
+        .red-button {
+            background-color: red;
+            color:white;
+            border:none;
+        }
 
-<button>hello</button>
-<p>paragraph of text</p>
-
-</body>
-</html>
+        .yellow-button {
+            background-color: yellow;
+        }
+    </style>
+    </head>
+    <body>
+        <button title="tooltip" class="red-button">
+            hello
+        </button>
+        <p>
+            paragraph of <button class="yellow-button">hello</button> text
+        </p>
+    </body>
+</html> 
